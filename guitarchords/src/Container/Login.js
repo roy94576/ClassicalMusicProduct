@@ -3,33 +3,33 @@ import axios from 'axios';
 import { Redirect } from 'react-router-dom'
 
 class Login extends Component {
-    state = {
-        email: "",
-        password: "",
-        checkLogin: false
-    }
-    changeHandler = (e) => {
-        this.setState({
-            [e.target.email]: e.target.value,
-            [e.target.password]: e.target.value,
-            [e.target.checkLogin]: e.target.value
-        }
+    // state = {
+    //     email: "",
+    //     password: "",
+    //     checkLogin: false
+    // }
+    // changeHandler = (e) => {
+    //     this.setState({
+    //         [e.target.email]: e.target.value,
+    //         [e.target.password]: e.target.value,
+    //         [e.target.checkLogin]: e.target.value
+    //     }
 
-        )
-    }
-    submitLogin = (e) => {
-        e.preventDefault();
-        axios.post("http://localhost:90/login", this.state)
-            .then((response) => {
-                console.log(response);
-                this.setState({
-                    checkLogin: true
-                })
-            })
-            .catch((err) => {
-                console.log(err.response)
-            })
-    }
+    //     )
+    // }
+    // submitLogin = (e) => {
+    //     e.preventDefault();
+    //     axios.post("http://localhost:90/login", this.state)
+    //         .then((response) => {
+    //             console.log(response);
+    //             this.setState({
+    //                 checkLogin: true
+    //             })
+    //         })
+    //         .catch((err) => {
+    //             console.log(err.response)
+    //         })
+    // }
 
     render() {
         if (this.state.checkLogin === true) {
