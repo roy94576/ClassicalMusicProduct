@@ -45,13 +45,13 @@ class Login extends Component {
                         <form>
                             <div className="form-group">
                                 <label>Email</label>
-                                <input type="email" value={this.state.email} onChange={(event) => { this.setState({ email: event.target.value }) }}className="form-control" placeholder="Enter Email" />
+                                <input type="email" value={this.state.email} onChange={(event) => { this.setState({ email: event.target.value }) }} className="form-control" placeholder="Enter Email" />
                             </div>
                             <div className="form-group">
                                 <label>Password</label>
                                 <input type="password" value={this.state.password} onChange={(event) => { this.setState({ password: event.target.value }) }} className="form-control" placeholder="Enter Password" />
                             </div>
-                            <button type="login" class="btn btn-primary">Login</button>
+                            <button type="login" onClick={this.submitLogin} class="btn btn-primary">Login</button>
                         </form>
                     </div>
                 </div>
