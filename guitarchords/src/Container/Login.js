@@ -29,7 +29,12 @@ class Login extends Component {
             .catch((err) => {
                 console.log(err.response)
             })
+            alert("Successful")
+            this.setState({
+                chklogin: true
+            })
     }
+  
 
     render() {
         if (this.state.checkLogin === true) {

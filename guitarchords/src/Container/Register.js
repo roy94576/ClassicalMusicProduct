@@ -26,6 +26,10 @@ class Register extends Component {
             email: this.state.email,
             password: this.state.password,
         }
+        alert("Successful")
+                this.setState({
+                    chklogin: true
+                })
         axios.post("http://localhost:90/signup", data)
             .then((response) => {
                 console.log(response)
@@ -34,6 +38,7 @@ class Register extends Component {
             .catch(error => {
                 console.log(error)
             })
+            
     }
     render() {
         return (
