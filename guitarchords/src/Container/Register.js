@@ -37,9 +37,9 @@ class Register extends Component {
             )
             .catch(error => {
                 console.log(error)
-            })
-            
+            }) 
     }
+    
     render() {
         return (
             <div className="container m-5">
