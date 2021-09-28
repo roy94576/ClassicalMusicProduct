@@ -2,26 +2,6 @@ import axios from "axios";
 import { Component } from "react";
 
 class Form extends Component {
-  // state = {
-  //   name: "",
-  //   email: "",
-  //   phone: "",
-  //   classtype: ""
-  // }
-
-  // makeBooking = (e) => {
-  //   e.preventDefault()
-
-  //   axios.post("http://localhost:90/makeBooking", this.state)
-  //     .then((response) => {
-  //       console.log(response)
-  //     }
-  //     )
-  //     .catch(error => {
-  //       console.log(error)
-  //     })
-  // }
-
   render() {
     return (
      < div classname="container m-5">
